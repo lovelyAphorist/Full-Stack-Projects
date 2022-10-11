@@ -31,6 +31,7 @@ guessButton.addEventListener("click", () => {
   const winner = humanIsWinner ? "human" : "computer";
 
   updateScore(winner);
+ // console.log(winner);
 
   if (humanIsWinner) {
     guessButton.innerText = "You Win!!!!!";

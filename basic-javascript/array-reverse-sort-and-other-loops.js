@@ -28,3 +28,38 @@ for (let i = 0; i < bobsFollowers.length; i++) {
     }
   }
 }
+//while loop
+let currentCard;
+while (currentCard != "spade") {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
+
+//do while loop
+let cupsOfSugarNeeded = 6;
+let cupsAdded = 0;
+
+do {
+  cupsAdded++;
+} while (cupsAdded < cupsOfSugarNeeded);
+
+//for of loop
+const hobbies = ["singing", "eating", "quidditch", "writing"];
+
+for (let i = 0; i < hobbies.length; i++) {
+  console.log(`I enjoy ${hobbies[i]}.`);
+}
+//same as
+
+for (const hobby of hobbies) {
+  console.log(`I enjoy ${hobby}.`);
+}
+
+const pokemonList = ["Pikachu", "Charizard", "Squirtle", "Yoshi", "Snorlax"];
+
+for (const pokemon of pokemonList) {
+  if (pokemon === "Yoshi") {
+    continue;
+  }
+  console.log(`You caught a ${pokemon}!`);
+}
